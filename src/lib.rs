@@ -1,8 +1,8 @@
 // implementing the refcell type
-use std::cell::UnsafeCell;
-use std::cell::Cell;
-
 pub mod RefCell {
+    
+use std::cell::UnsafeCell;
+use std::cell::Cell;    
 pub struct RefCell<T> {
     value: UnsafeCell<T>,
     tracker: Cell<isize>,
